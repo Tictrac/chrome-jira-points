@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "JIRA Points",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Totals points in JIRA Agile Board columns",
+    "description": "The description of the application"
+  }
+}
