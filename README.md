@@ -1,14 +1,15 @@
 # JIRA Points for Chrome
 
 To develop:
-* run npm install
-* run grunt install
-* run grunt debug
-* in Chrome go to More toole -> Extensions
-* enable development mode and open the app folder as an unpackaged extension
+* run ```npm install```
+* run ```bower install```
+* run ```grunt debug```
+* in Chrome go to More tools -> Extensions
+* enable 'Development mode' and open the ```app``` folder as an unpackaged extension
 
 To package:
-* run grunt build
+* run ```grunt build```
+* ```git commit``` the new version
 
 To deploy:
-* upload package to the Chrome Web Store
+* upload the new package (inside the ```package``` folder) to the Chrome Web Store

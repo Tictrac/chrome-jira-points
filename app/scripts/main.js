@@ -1,8 +1,9 @@
+'use strict';
+
 $(function() {
 
-    MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
-
-    var columnContainerSelector = '#ghx-pool-column',
+    var MutationObserver = window.MutationObserver || window.WebKitMutationObserver,
+        columnContainerSelector = '#ghx-pool-column',
         headersSelector = '#ghx-column-headers .ghx-column',
         pointsClass = 'aui-badge',
         pointsSelector = '.' + pointsClass,
@@ -14,8 +15,8 @@ $(function() {
     debouncedFunction = debounce(checkForBoard, 50);
     observer = new MutationObserver(debouncedFunction);
     observer.observe(document, {
-      subtree: true,
-      attributes: true
+        subtree: true,
+        attributes: true
     });
 
     /**
@@ -34,8 +35,8 @@ $(function() {
      * Generate the total points for each column;
      */
     function generatePoints() {
-        var headers,
-            header,
+        var $headers,
+            $header,
             column,
             points,
             total,
@@ -43,10 +44,10 @@ $(function() {
             headerPoints;
 
         // Get headers
-        headers = $(headersSelector);
+        $headers = $(headersSelector);
 
         // Loop over each header
-        $.each(headers, function() {
+        $.each($headers, function() {
             $header = $(this);
 
             // Get the column from the header ID
@@ -84,15 +85,20 @@ $(function() {
     function debounce(func, wait, immediate) {
         var timeout;
         return function() {
-            var context = this, args = arguments;
-            var later = function() {
-                timeout = null;
-                if (!immediate) func.apply(context, args);
-            };
-            var callNow = immediate && !timeout;
+            var context = this, args = arguments,
+                later = function() {
+                    timeout = null;
+                    if (!immediate) {
+                        func.apply(context, args);
+                    }
+                },
+                callNow = immediate && !timeout;
+
             clearTimeout(timeout);
             timeout = setTimeout(later, wait);
-            if (callNow) func.apply(context, args);
+            if (callNow) {
+                func.apply(context, args);
+            }
         };
     }
 });

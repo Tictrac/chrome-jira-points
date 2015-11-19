@@ -24,7 +24,7 @@
         "https://*.atlassian.net/*"
       ],
       "js": [
-        "scripts/jquery.js",
+        "vendor/jquery/dist/jquery.min.js",
         "scripts/main.js"
       ]
     }

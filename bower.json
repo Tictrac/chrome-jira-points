@@ -1,6 +1,17 @@
 {
   "name": "jira-points",
   "version": "0.0.0",
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "jquery": "~2.1.4"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/Tictrac/chrome-jira-points",
+  "authors": [
+    "bobbypates <robert@tictrac.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": []
 }
