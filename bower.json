@@ -7,11 +7,7 @@
   "devDependencies": {},
   "homepage": "https://github.com/Tictrac/chrome-jira-points",
   "authors": [
-    "bobbypates <robert@tictrac.com>"
+    "Tictrac <developer@tictrac.com>"
   ],
-  "description": "",
-  "main": "",
-  "moduleType": [],
-  "license": "MIT",
-  "ignore": []
+  "license": "MIT"
 }

@@ -1,6 +1,25 @@
 {
   "name": "jira-points",
   "version": "0.0.0",
+  "homepage": "https://github.com/tictrac/chrome-jira-points",
+   "author": {
+     "name": "Tictrac",
+     "email": "developer@tictrac.com",
+     "url": "tictrac.com"
+   },
+   "repository": {
+     "type": "git",
+     "url": "git://github.com/tictrac/chrome-jira-points.git"
+   },
+   "bugs": {
+     "url": "https://github.com/tictrac/chrome-jira-points/issues"
+   },
+   "licenses": [
+     {
+       "type": "MIT",
+       "url": "https://github.com/tictrac/chrome-jira-points/blob/master/LICENSE-MIT"
+     }
+   ],
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
